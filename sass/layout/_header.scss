@@ -1,5 +1,5 @@
 .header{
-    orientation: top;
+    margin-bottom: 15vh;
 
     &_logo{
         margin-left: 45vw;
@@ -9,19 +9,19 @@
 
     &_text-box{
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 90vw;
-        flex-basis: 50rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 450px;
+    margin: 0 auto;
     }
 }
 
+
 .container_avatar{
-    display: flex;
-    margin-top: 5vh;
-    justify-content: center;
-  
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+
   
 }
 
@@ -29,12 +29,23 @@
 
 
     &_left-side{
-        left: -5vw;
-        flex-basis: 25rem;
+        display: grid;
+        grid-template-columns: repeat;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        align-content: center;
+        grid-row-gap: 10px;
+        margin-left: -7%;
     }
 
     &_right-side{
-        right: -5vw;
-        flex-basis: 25rem;
+        display: grid;
+        grid-template-columns: repeat;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        align-content: center;
+        grid-row-gap: 10px;
+        margin-right: -26px;
+        justify-items: end;
     }
 }

@@ -1,6 +1,6 @@
 .avatar_icon{
     border-radius: 50%;
-    width: 6rem;
+    width: 7rem;
 
    
 
@@ -31,7 +31,7 @@
     display: flex;
     border-radius: 50%;
     border: 1px solid;
-    border-color:gray;
+    border-color:rgba($color-gray-dark,0.4);
     width: 3rem;
     height: 3rem;
     justify-content: center;
@@ -53,5 +53,5 @@
     margin-left: 0%;
     position: absolute;
     margin-bottom: 94px;
-    background-color: gray;
+    background-color:rgba($color-gray-dark,0.4);
 }
