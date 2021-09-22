@@ -1,0 +1,40 @@
+.header{
+    orientation: top;
+
+    &_logo{
+        margin-left: 45vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    &_text-box{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+        flex-basis: 50rem;
+    }
+}
+
+.container_avatar{
+    display: flex;
+    margin-top: 5vh;
+    justify-content: center;
+  
+  
+}
+
+.avatar{
+
+
+    &_left-side{
+        left: -5vw;
+        flex-basis: 25rem;
+    }
+
+    &_right-side{
+        right: -5vw;
+        flex-basis: 25rem;
+    }
+}

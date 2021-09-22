@@ -1,0 +1,57 @@
+.avatar_icon{
+    border-radius: 50%;
+    width: 6rem;
+
+   
+
+}
+
+
+._left:nth-child(2){
+    transform: translateY(-50%);
+    
+}
+
+._left:nth-child(5n){
+    transform: translateY(-50%);
+
+}
+
+._right:nth-child(2){
+    transform: translateY(50%);
+    
+}
+
+._right:nth-child(5n){
+    transform: translateY(50%);
+
+}
+
+.wraper{
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color:gray;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    position: relative;
+    margin-bottom: -22px;
+    background-color: $color-white;
+
+    
+}
+
+.wraper::after {
+    content: "";
+    width: 1px;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+    position: absolute;
+    margin-bottom: 94px;
+    background-color: gray;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "zadatak_2",
+  "version": "1.0.0",
+  "description": "Chat",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElvisB1987/Zadatak_2.git"
+  },
+  "author": "Elvis Balija",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElvisB1987/Zadatak_2/issues"
+  },
+  "homepage": "https://github.com/ElvisB1987/Zadatak_2#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {}
+}
