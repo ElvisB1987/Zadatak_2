@@ -1,17 +1,16 @@
 footer {
-    
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary,0.8),
-        rgba($color-primary, 0.8)
-      ),
-      url(../../starter-code/assets/desktop/image-footer.jpg);
-    opacity: 80;
- 
-    background-size: cover;
-    padding: 10%;
-    color: #FAFAFA;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url(../../starter-code/assets/desktop/image-footer.jpg);
+  opacity: 80;
+
+  background-size: cover;
+  padding: 10%;
+  color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

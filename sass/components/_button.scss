@@ -1,74 +1,65 @@
-
 .btn {
-    &:link,
-    &:visited {
-    
-      text-decoration: none;
-      padding: 15px 40px;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  &--purple:hover {
+    background-color: $color-purple-light;
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &--green:hover {
+    background-color: $color-primary-light;
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--purple {
+    background-color: $color-purple;
+    color: $color-white;
+    margin-left: 10px;
+    &::after {
+      background-color: $color-white;
+    }
+
+    &::after {
+      content: "";
       display: inline-block;
+      height: 100%;
+      width: 100%;
       border-radius: 100px;
-      transition: all 0.2s;
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
     }
-    
-    &--purple:hover {
-      
-      background-color: $color-purple-light;
-      &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-      }
-    }
-    &--green:hover {
-      
-      background-color: $color-primary-light;
-      &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-      }
-    }
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 10px rgba($color-black, 0.2);
-    }
-  
-    &--green {
-      background-color:$color-primary;
-      color: $color-white;
-    }
+  }
 
-    &--purple {
-      background-color: $color-purple;
-      color: $color-white;
-      margin-left: 10px;
-      &::after {
-        background-color: $color-white;
-        
-      }
-  
-      &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all 0.4s;
-      }
-    }
+  &_span_header {
+    color: $color-primary-light;
+  }
 
-    &_span_header{
-      color:$color-primary-light;
-    }
-
-    &_span_footer{
-      color:$color-gray-dark;
-    }
-  
-  
-    
+  &_span_footer {
+    color: $color-gray-dark;
+  }
 }
-  
