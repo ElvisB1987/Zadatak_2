@@ -1,7 +1,19 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
+  .images > img {
+    width: 200px;
+    border-radius: 10px;
+}
+.header{
+  overflow: hidden;
+  margin-bottom: 5vh;
+}
 }
 
 @media screen and (max-width: 900px) {
+
+  .header{
+  overflow: hidden;  
+  }
   .container_avatar {
     grid-template-areas:
       "left right "
@@ -72,7 +84,7 @@
   }
 
   .images > img {
-    width: 164px;
+    width: 130px;
     border-radius: 10px;
   }
 
@@ -82,9 +94,11 @@
   .side_tect-box {
     width: 350px;
   }
+  
+
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 600px) {
   .container_avatar {
     grid-template-areas:
       "left right "
